@@ -6,16 +6,18 @@ document.addEventListener('DOMContentLoaded', function () {
         navMenu.classList.toggle('active');
     });
 
-    document.querySelector('form').addEventListener('submit', function (event) {
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
+    // Shopping cart functionality
+    let cart = [];
+    const products = [
+        { id: 1, name: 'Watch 1', price: 199.99 },
+        { id: 2, name: 'Watch 2', price: 299.99 },
+        { id: 3, name: 'Watch 3', price: 399.99 },
+   
 
-        if (name === '' || email === '' || message === '') {
-            alert('Please fill in all fields.');
-            event.preventDefault();
-        } else {
-            alert('Thank you for your message!');
-        }
-    });
-});
+
+
+
+
+
+
+
